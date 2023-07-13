@@ -19,7 +19,7 @@ Future getCyclingRouteUsingMapbox(LatLng source, LatLng destination) async {
     final responseData = await _dio.get(url);
     return responseData.data;
   } catch (e) {
-    final errorMessage = DioExceptions.fromDioError(e as DioError).toString();
-    debugPrint(errorMessage);
+    // final errorMessage = DioExceptions.fromDioError(e as DioError).toString();
+    // debugPrint(errorMessage);
   }
 }

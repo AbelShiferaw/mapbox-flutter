@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_mapbox_navigation/library.dart';
+import 'package:flutter_mapbox_navigation/flutter_mapbox_navigation.dart';
 import 'package:mapbox_gl/mapbox_gl.dart';
 import 'package:mapbox_turn_by_turn/helpers/shared_prefs.dart';
 import 'package:mapbox_turn_by_turn/ui/rate_ride.dart';
@@ -19,7 +19,7 @@ class _TurnByTurnState extends State<TurnByTurn> {
   var wayPoints = <WayPoint>[];
 
   // Config variables for Mapbox Navigation
-  late MapBoxNavigation directions;
+  late TripProg directions;
   late MapBoxOptions _options;
   late double distanceRemaining, durationRemaining;
   late MapBoxNavigationViewController _controller;
